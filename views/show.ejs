@@ -13,5 +13,10 @@
     <p><%= threads.category  %> </p>
 
     <a href="/">Show other threads</a>
+    <a href="/thread/<%=threads._id%>/edit">Edit thread</a>
+
+    <form action="/thread/<%=threads._id%>/delete?_method=DELETE" method="post">
+    <button>Delete</button>
+    </form>
 </body>
 </html>
